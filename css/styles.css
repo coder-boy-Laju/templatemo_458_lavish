@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
@@ -29,7 +28,7 @@ p {
   font-weight: 400;
   font-size: 16px;
 }
-img{
+img {
   width: 100%;
 }
 a {
@@ -144,7 +143,7 @@ i {
 }
 .about-lavish .container {
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
 }
 
 .about-lavish-right {
@@ -157,31 +156,31 @@ i {
   font-weight: 600;
 }
 
-.about-lavish-left{
+.about-lavish-left {
   width: 50%;
   margin-right: 25px;
 }
-.text-top{
+.text-top {
   padding-top: 50px;
 }
 
-.about-lavish-right span{
+.about-lavish-right span {
   color: #ffffff;
-    font-weight: bold;
-    display: block;
-    padding-bottom: 6px;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 6px;
 }
-.about-lavish-right small{
+.about-lavish-right small {
   font-weight: bold;
   float: right;
   font-size: 16px;
 }
-.progress{
+.progress {
   border-radius: 4px;
-    background: #ffffff;
-    height: 4px;
-    overflow: hidden;
-    margin-bottom: 20px;
+  background: #ffffff;
+  height: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 .progress-bar {
   float: left;
@@ -192,29 +191,153 @@ i {
   color: #fff;
   text-align: center;
   background-color: #d43f52;
- 
 }
 
 /* PORTFOLIO */
-.protfolio{
+.protfolio {
   background-color: #1a1a1a;
   margin-top: -30px;
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
-.protfolio .container{
-text-align: center;
+.protfolio .container {
+  text-align: center;
 }
 .protfolio-header{
-  padding: 40px 0px;
+  margin-bottom: 20px;
 }
-
-.protfolio-img-text{
+.protfolio-img-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
+}
+.protfolio-img-text {
   position: relative;
-  display: block;
+  max-width: 340px;
 }
-.protfolio-img-text img{
-width: 400px;
+.protfolio-img-text-4-5{
+  max-width: 500px;
+}
+.protfolio-img-text img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.protfolio-overly-text {
+  background-color: #d43f52;
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  padding-top: 50px;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+.protfolio-overly-text h4 {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.protfolio-overly-text h5 {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.protfolio-img-text:hover .protfolio-overly-text {
+  opacity: 1;
+  transform: translateX(50%, 50%);
 }
 
-.protfolio-overly-text{
+
+/* contact */
+
+.contact{
+  background-color: #000000;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  height: auto;
+}
+.contact-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.contact h1{
+margin-bottom: 35px;
+margin-top: 0px;
+
+}
+.contact-title a{
+  display: block;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  color: #999;
+}
+.contact-title a i{
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.contact-form input{
+  display: block;
+  background: transparent;
+    border: 2px solid #999;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    width: 500px;
+    font-size: 16px;
+    outline: none;
+}
+.contact-form textarea{
+  background: transparent;
+    border: 2px solid #999;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 15px 20px;
+    width: 500px;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+}
+.contact-form a{
+  background: #d43f52;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 15px 20px;
+    width: 500px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*  footer*/
+.footer{
+  background-color: #1a1a1a;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.copyright{
+  text-align: center;
+}
+.footer-social{
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+}
+.copyright p{
+margin-bottom: 15px;
+}
+.copyright a i{
+color: #999;
+font-size: 14px;
+margin-right: 10px;
 
 }
